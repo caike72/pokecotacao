@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#84fab0), to(#8fd3f4));
+  background-image: linear-gradient(to right top, #84fab0 0%, #8fd3f4 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main a {
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+}
+
+main a:hover {
+  color: blueviolet;
+}
+
+main .container {
+  min-height: 80vh;
+  width: 40%;
+  border-radius: 1.3rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .container a {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #426696;
+  padding: 1rem 0;
+  opacity: 0.8;
+}
+
+main .container a:hover {
+  opacity: 0.5;
+}
+
+main .container #pokeId, main .container #usdValue {
+  color: crimson;
+  opacity: 0.8;
+}
+
+main .container #pokeId {
+  font-size: 3rem;
+}
+
+main .container #usdValue {
+  font-size: 2rem;
+}
+
+main .container img {
+  width: 15rem;
+}
+
+main .credit {
+  font-size: .8rem;
+}
+/*# sourceMappingURL=styles.css.map */
