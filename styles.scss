@@ -21,8 +21,8 @@ main {
     &:hover {
       color: blueviolet;
     }
-  } 
-  
+  }
+
   .container {
     min-height: 80vh;
     width: 40%;
@@ -46,7 +46,8 @@ main {
       }
     }
 
-    #pokeId, #usdValue {
+    #pokeId,
+    #usdValue {
       color: crimson;
       opacity: 0.8;
     }
@@ -63,7 +64,68 @@ main {
       width: 15rem;
     }
   }
+
   .credit {
     font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    min-width: 322px;
+    text-align: center;
+    
+    .container {
+      width: 90%;
+
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    min-width: 322px;
+    text-align: center;
+
+    .container {
+      width: 80%;
+
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    min-width: 322px;
+    text-align: center;
+
+    .container {
+      width: 80%;
+
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    min-width: 322px;
+    text-align: center;
+
+    .container {
+      width: 40%;
+
+      a {
+        font-size: 2.5rem;
+      }
+    }
   }
 }

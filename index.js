@@ -4,7 +4,6 @@
     fetch(usdUrl)
       .then(response => response.json())
       .then(function (usdData) {
-        console.log(usdData.timestamp)
         var usdValue = Math.round(usdData.rates.BRL * 100)
         document.getElementById('usdValue').innerText = `US$ 1 = R$${(parseFloat(usdData.rates.BRL).toFixed(2))}`
 
