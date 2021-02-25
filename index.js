@@ -1,6 +1,6 @@
 {
   window.onload = function () {
-    let usdUrl = `https://api.exchangeratesapi.io/latest?base=USD`
+    let usdUrl = `https://openexchangerates.org/api/latest.json?app_id=e6e3471af7ca424a875d5a4ef71f2f59`
     fetch(usdUrl)
       .then(response => response.json())
       .then(function (usdData) {
