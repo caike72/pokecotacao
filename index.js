@@ -4,8 +4,19 @@
     fetch(usdUrl)
       .then(response => response.json())
       .then(function (usdData) {
+        console.log(usdData.timestamp)
         var usdValue = Math.round(usdData.rates.BRL * 100)
         document.getElementById('usdValue').innerText = `US$ 1 = R$${(parseFloat(usdData.rates.BRL).toFixed(2))}`
+
+
+        let value_timestamp = usdData.timestamp
+        var date = new Date(value_timestamp * 1000);
+        var hours = date.getHours();
+        var minutes = "0" + date.getMinutes();
+        var seconds = "0" + date.getSeconds();
+
+        
+        document.getElementById('updateTime').innerText = hours + ':' + minutes.substr(-2) + ' BRT';
 
 
         let pokeUrl = `https://pokeapi.co/api/v2/pokemon/${usdValue}`
