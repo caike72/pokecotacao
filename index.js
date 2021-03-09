@@ -23,20 +23,20 @@
                 document.getElementById('pokeName').innerText = pokeData.name
                 document.getElementById('pokeName').href = `https://pokemondb.net/pokedex/${pokeData.name}`
 
-                if (pokeData.id == 586) {
+                if (pokeData.id == 586 || pokeData.id == 585) {
                   let sawsbuck = Math.floor(Math.random() * 4)
                   switch (sawsbuck) {
                     case 0:
-                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/586-spring.png`
+                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/${pokeData.id}-spring.png`
                       break;
                     case 1:
-                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/586-summer.png`
+                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/${pokeData.id}-summer.png`
                       break;
                     case 2:
-                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/586-autumn.png`
+                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/${pokeData.id}-autumn.png`
                       break;
                     case 3:
-                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/586-winter.png`
+                      document.getElementById('pokeSprite').src = `https://pokeres.bastionbot.org/images/pokemon/${pokeData.id}-winter.png`
                       break;
                   }
                 } else {
